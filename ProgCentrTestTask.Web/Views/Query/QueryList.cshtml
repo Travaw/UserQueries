@@ -1,0 +1,73 @@
+﻿@model IEnumerable<ProgCentrTestTask.Web.Models.DisplayQueryModel>
+
+@if(Model.Count()==0){
+    <div>
+        Запросы не найдены
+    </div>
+}
+else{
+<table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Search)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SortBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Order)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Page)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Limit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreationDate)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Search)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SortBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Order)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Page)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Limit)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreationDate)
+                </td>
+
+                <td>
+                    @if (!item.IsExecuted)
+                    {
+                        string id ="query"+item.Id;
+                        using(Html.BeginForm("Execute", "Query", FormMethod.Post, htmlAttributes: new { @id=id}))
+                        {
+                            @Html.Hidden("queryId", item.Id)
+                            <input type="submit" value="Выполнить" class="btn btn-default" form=@id >
+                        }
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Просмотреть результат", "UsersForQuery", "User", new { queryId = item.Id }, new { @class = "btn btn-default" })
+                    }
+
+                </td>
+            </tr>
+        }
+        </table>
+}

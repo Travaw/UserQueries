@@ -1,0 +1,13 @@
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\bin\Debug\ProgCentrTestTask.Core.dll.config
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\bin\Debug\ProgCentrTestTask.Core.dll
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\bin\Debug\ProgCentrTestTask.Core.pdb
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\bin\Debug\EntityFramework.dll
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\bin\Debug\System.Data.SqlClient.dll
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\bin\Debug\EntityFramework.xml
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\bin\Debug\System.Data.SqlClient.xml
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\obj\Debug\ProgCentrTestTask.Core.csprojAssemblyReference.cache
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\obj\Debug\ProgCentrTestTask.Core.csproj.CopyComplete
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\obj\Debug\ProgCentrTestTask.Core.dll
+D:\Work\ПЦ\тестовое задание\ProgCentrTestTask\ProgCentrTestTask.Core\obj\Debug\ProgCentrTestTask.Core.pdb
