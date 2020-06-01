@@ -36,10 +36,28 @@ else{
                     @Html.DisplayFor(modelItem => item.Search)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.SortBy)
+                    @switch (item.SortBy)
+                    {
+                        case "id":<span>По идентификатору</span>
+                            break;
+                        case "name":<span>По имени</span>
+                            break;
+                        case "createdAt":<span>По дате создания</span>
+                            break;
+                        default: <span>По идентификатору</span>
+                        break;
+                }
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Order)
+                    @switch (item.SortBy)
+                    {
+                        case "asc":<span>По возрастанию</span>
+                            break;
+                        case "desc": <span>По убыванию</span>
+                        break;
+                    default:<span>По возрастанию</span>
+                    break;
+            }
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Page)

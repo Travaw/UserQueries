@@ -8,8 +8,8 @@ namespace ProgCentrTestTask.Application.QueryConsts
 {
     public static class OrderParams
     {
-        public const string Ask = "ask";
+        public const string Ask = "asc";
 
-        public const string Desc = "desk";
+        public const string Desc = "desc";
     }
 }

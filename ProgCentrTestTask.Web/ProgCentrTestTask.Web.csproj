@@ -206,6 +206,7 @@
     <Content Include="Views\Query\QueryList.cshtml" />
     <Content Include="Views\User\UserList.cshtml" />
     <Content Include="Views\User\Search.cshtml" />
+    <Content Include="Views\Shared\Loading.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

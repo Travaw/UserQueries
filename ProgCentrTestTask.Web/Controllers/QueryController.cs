@@ -37,8 +37,7 @@ namespace ProgCentrTestTask.Web.Controllers
         [HttpGet]
         public ActionResult Add()
         {
-
-            return PartialView(new CreateQueryModel());
+            return View(new CreateQueryModel());
         }
 
         [HttpPost]
@@ -46,7 +45,6 @@ namespace ProgCentrTestTask.Web.Controllers
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.Message = "Данные введены некорректно";
                 return View(model);
             }
             queryService.Add(mapper.Map<QueryCreateDTO>(model));

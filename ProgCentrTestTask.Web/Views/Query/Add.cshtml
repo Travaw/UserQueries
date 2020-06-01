@@ -1,11 +1,10 @@
 ﻿@model ProgCentrTestTask.Web.Models.CreateQueryModel
 
 
-@using (Ajax.BeginForm("Add", "Query", null, new AjaxOptions { UpdateTargetId = "body", HttpMethod="Post" }, htmlAttributes: new { }))
+@using (Ajax.BeginForm("Add", "Query", null, new AjaxOptions { UpdateTargetId = "body", HttpMethod="Post", LoadingElementId="loading_el" }, htmlAttributes: new { }))
 {
     
     @Html.AntiForgeryToken()
-    @ViewBag.Message
     <div class="form-horizontal">
 
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -53,6 +52,7 @@
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Добавить" class="btn btn-default" />
             </div>
+            @Html.Partial("Loading")
         </div>
     </div>
 }
